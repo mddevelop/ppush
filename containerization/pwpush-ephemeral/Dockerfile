@@ -20,7 +20,8 @@ RUN apt-get update -qq && \
     git clone https://github.com/mddevelop/ppush.git && \
     touch ${APP_ROOT}/log/private.log && \
     cd ${APP_ROOT} && \
-    chown -R 1001:root ${APP_ROOT}
+    chown -R 1001:root ${APP_ROOT} && \
+    echo "alias ll='ls -al'" >> ~/.bashrc
 
 EXPOSE 5000
 
