@@ -15,7 +15,7 @@ RUN sed -i -e '1ideb mirror://mirrors.ubuntu.com/mirrors.txt focal-backports mai
 RUN sed -i -e '1ideb mirror://mirrors.ubuntu.com/mirrors.txt focal-security main restricted universe multiverse\' /etc/apt/sources.list 
 
 RUN apt-get update -qq && \
-    apt-get install -y --assume-yes build-essential libpq-dev git curl ruby2.7 ruby2.7-dev tzdata sqlite3 ruby-sqlite3 libsqlite3-dev zlib1g-dev nodejs yarnpkg && \
+    apt-get install -y --assume-yes build-essential libpq-dev git curl ruby2.7 ruby2.7-dev tzdata sqlite3 ruby-sqlite3 libsqlite3-dev zlib1g-dev nodejs yarnpkg bash vim && \
     cd /opt && \
     git clone https://github.com/mddevelop/ppush.git && \
     touch ${APP_ROOT}/log/private.log && \

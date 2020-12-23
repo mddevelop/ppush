@@ -1,0 +1,33 @@
+@font-face {
+  font-family: "Telenet1";
+  src: url("~@/assets/fonts/bloomSpeakBodyRegular.woff") format("woff");
+}
+@font-face {
+  font-family: "Telenet2";
+  src: url("~@/assets/fonts/bloomSpeakBodyMedium.woff") format("woff");
+}
+@font-face {
+  font-family: "Telenet3";
+  src: url("~@/assets/fonts/bloomSpeakTitleMedium.woff") format("woff");
+}
+@font-face {
+  font-family: "Telenet4";
+  src: url("~@/assets/fonts/bloomSpeakBodyExtraBold.woff") format("woff");
+}
+@font-face {
+  font-family: "Telenet5";
+  src: url("~@/assets/fonts/bloomSpeakTitleHeavy.woff") format("woff");
+}
+@font-face {
+  font-family: "Telenet6";
+  src: url("~@/assets/fonts/bloomSpeakTitleUltraHeavy.woff") format("woff");
+}
+
+h1 { 
+     font-family: "Telenet6", Helvetica, Arial;
+     font-size: 30px;
+}
+h2{
+     font-family: "Telenet1", Helvetica, Arial;
+     font-size: 20px;
+}

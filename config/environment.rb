@@ -4,18 +4,20 @@ require_relative 'application'
 PAYLOAD_INITIAL_TEXT = ENV.fetch('PAYLOAD_INITIAL_TEXT', 'Enter the Password to be Shared')
 
 # If deploying PasswordPusher yourself, you should change these CRYPT values.
-CRYPT_KEY = ENV.fetch('CRYPT_KEY', '}s-#2R0^/+2wEXc47\$9Eb')
-CRYPT_SALT = ENV.fetch('CRYPT_SALT', ',2_%4?[+:3774>f')
+#CRYPT_KEY = ENV.fetch('CRYPT_KEY', '}s-#2R0^/+2wEXc47\$9Eb')
+#CRYPT_SALT = ENV.fetch('CRYPT_SALT', ',2_%4?[+:3774>f')
+CRYPT_KEY = ENV.fetch('CRYPT_KEY', 'uFmjGQ4&t*Cf&WpR9MG6m9')
+CRYPT_SALT = ENV.fetch('CRYPT_SALT', 'rx&7E4a+YCzrf#s')
 
 # Controls the "Expire After Days" form settings in Password#new
-EXPIRE_AFTER_DAYS_DEFAULT = Integer(ENV.fetch('EXPIRE_AFTER_DAYS_DEFAULT', 7))
+EXPIRE_AFTER_DAYS_DEFAULT = Integer(ENV.fetch('EXPIRE_AFTER_DAYS_DEFAULT', 1))
 EXPIRE_AFTER_DAYS_MIN = Integer(ENV.fetch('EXPIRE_AFTER_DAYS_MIN', 1))
-EXPIRE_AFTER_DAYS_MAX = Integer(ENV.fetch('EXPIRE_AFTER_DAYS_MAX', 90))
+EXPIRE_AFTER_DAYS_MAX = Integer(ENV.fetch('EXPIRE_AFTER_DAYS_MAX', 3))
 
 # Controls the "Expire After Views" form settings in Password#new
-EXPIRE_AFTER_VIEWS_DEFAULT = Integer(ENV.fetch('EXPIRE_AFTER_VIEWS_DEFAULT', 5))
+EXPIRE_AFTER_VIEWS_DEFAULT = Integer(ENV.fetch('EXPIRE_AFTER_VIEWS_DEFAULT', 2))
 EXPIRE_AFTER_VIEWS_MIN = Integer(ENV.fetch('EXPIRE_AFTER_VIEWS_MIN', 1))
-EXPIRE_AFTER_VIEWS_MAX = Integer(ENV.fetch('EXPIRE_AFTER_VIEWS_MAX', 100))
+EXPIRE_AFTER_VIEWS_MAX = Integer(ENV.fetch('EXPIRE_AFTER_VIEWS_MAX', 3))
 
 # DELETABLE_BY_VIEWER_PASSWORDS
 # Can passwords be deleted by viewers?
