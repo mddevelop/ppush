@@ -14,4 +14,9 @@
       = range_field_tag("password_expire_after_views", EXPIRE_AFTER_VIEWS_DEFAULT, {:name => "password[expire_after_views]", :class => "slider", :min => EXPIRE_AFTER_VIEWS_MIN, :max => EXPIRE_AFTER_VIEWS_MAX, :step => "1", :onchange => "showViewsValue(this.value)", :oninput => "showViewsValue(this.value)"})
       %span#viewsrange
         == #{EXPIRE_AFTER_VIEWS_DEFAULT} Views
+
+        %p.notes
+        = check_box_tag "password[deletable_by_viewer]", nil, DELETABLE_BY_VIEWER_DEFAULT
+        Allow viewers to optionally delete password before expiration
+
   %p= f.submit(:value => "Push it!", :class => "pushit", 'data-disable-with' => "Pushing...")
