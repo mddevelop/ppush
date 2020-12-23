@@ -4,7 +4,7 @@ FROM docker.io/ubuntu:focal
 #ENV https_proxy=http://10.0.2.2:3128
 #ENV http_proxy=http://10.0.2.2:3128
 
-ENV APP_ROOT=/opt/PasswordPusher
+ENV APP_ROOT=/opt/ppush
 ENV PATH=${APP_ROOT}:${PATH} HOME=${APP_ROOT}
 
 RUN ln -fs /usr/share/zoneinfo/Europe/Brussels > /etc/localtime
